@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuraRide - Smart Rider Safety & Guardian Alert System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+    
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-12 h-12 feature-icon rounded-xl flex items-center justify-center mr-3">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold gradient-text">SecuraRide</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#features" class="text-gray-700 hover:text-blue-600 px-4 py-2 text-sm font-medium transition-all duration-300 hover:bg-blue-50 rounded-lg">Features</a>
+                        <a href="#tech" class="text-gray-700 hover:text-blue-600 px-4 py-2 text-sm font-medium transition-all duration-300 hover:bg-blue-50 rounded-lg">Technology</a>
+                        <a href="#impact" class="text-gray-700 hover:text-blue-600 px-4 py-2 text-sm font-medium transition-all duration-300 hover:bg-blue-50 rounded-lg">Impact</a>
+                        <a href="#team" class="text-gray-700 hover:text-blue-600 px-4 py-2 text-sm font-medium transition-all duration-300 hover:bg-blue-50 rounded-lg">Team</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark Mode">
+                        <div class="theme-toggle-inner">
+                            <i class="fas fa-sun sun-icon"></i>
+                            <i class="fas fa-moon moon-icon"></i>
+                        </div>
+                    </button>
+                    <button class="premium-button" onclick="showNotification('Coming Soon!', 'success')">
+                        <i class="fas fa-rocket mr-2"></i>Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute top-20 left-10 w-20 h-20 bg-white bg-opacity-20 rounded-full floating-animation" style="animation-delay: 0s;"></div>
+        <div class="absolute top-40 right-20 w-16 h-16 bg-white bg-opacity-15 rounded-full floating-animation" style="animation-delay: 2s;"></div>
+        <div class="absolute bottom-40 left-20 w-24 h-24 bg-white bg-opacity-10 rounded-full floating-animation" style="animation-delay: 4s;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center bg-white bg-opacity-20 rounded-full px-6 py-3 mb-8 glass-effect">
+                        <i class="fas fa-shield-alt text-emerald-300 mr-2"></i>
+                        <span class="text-white font-medium">Advanced Rider Safety Platform</span>
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+                        Your Guardian on
+                        <span class="text-yellow-300 relative">
+                            Every Ride
+                            <svg class="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 300 12" fill="none">
+                                <path d="M0 6C50 2 100 10 150 6C200 2 250 10 300 6" stroke="currentColor" stroke-width="3" fill="none"></path>
+                            </svg>
+                        </span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl text-blue-100 mb-10 leading-relaxed max-w-2xl">
+                        Revolutionary AI-powered rider safety platform with real-time monitoring, guardian alerts, and emergency response for two-wheeler riders across India
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center mb-12">
+                        <button class="premium-button interactive-demo" onclick="startDemo()">
+                            <i class="fas fa-play mr-2"></i>
+                            <span>Watch Demo</span>
+                        </button>
+                        <button class="glass-effect text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-30" onclick="downloadApp()">
+                            <i class="fas fa-download mr-2"></i>Download App
+                        </button>
+                    </div>
+                    
+                    <div class="flex flex-wrap justify-center lg:justify-start items-center gap-8 text-blue-100">
+                        <div class="flex items-center">
+                            <i class="fas fa-users mr-2"></i>
+                            <span class="font-medium">50K+ Active Users</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-star mr-2 text-yellow-300"></i>
+                            <span class="font-medium">4.8/5 Rating</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-check mr-2 text-emerald-300"></i>
+                            <span class="font-medium">24/7 Protection</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center lg:justify-end">
+                    <div class="mobile-mockup floating-animation">
+                        <div class="mobile-screen w-80 h-96 p-6 relative">
+                            <div class="bg-white bg-opacity-10 rounded-2xl p-4 h-full flex flex-col">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-2">
+                                            <i class="fas fa-shield-alt text-blue-600 text-sm"></i>
+                                        </div>
+                                        <span class="text-white font-semibold">SecuraRide</span>
+                                    </div>
+                                    <div class="text-white text-sm">
+                                        <i class="fas fa-signal mr-1"></i>
+                                        <i class="fas fa-wifi mr-1"></i>
+                                        <i class="fas fa-battery-three-quarters"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white bg-opacity-20 rounded-xl p-4 mb-4">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-white text-sm">Current Speed</span>
+                                        <span class="text-green-300 text-sm">Safe</span>
+                                    </div>
+                                    <div class="text-white text-2xl font-bold">45 km/h</div>
+                                </div>
+                                
+                                <div class="bg-white bg-opacity-20 rounded-xl p-4 mb-4">
+                                    <div class="text-white text-sm mb-2">Guardian Status</div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-green-400 rounded-full mr-2 pulse-glow"></div>
+                                        <span class="text-white text-sm">Mom & Dad Connected</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-auto">
+                                    <button class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-xl font-semibold transition-colors duration-300 pulse-glow">
+                                        <i class="fas fa-exclamation-triangle mr-2"></i>
+                                        Emergency SOS
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-effect rounded-2xl p-8 text-center card-premium">
+                    <div class="stats-counter mb-2" data-target="50">0</div>
+                    <div class="text-blue-100 font-medium">Million+ Riders in India</div>
+                </div>
+                <div class="glass-effect rounded-2xl p-8 text-center card-premium">
+                    <div class="stats-counter mb-2" data-target="150">0</div>
+                    <div class="text-blue-100 font-medium">Thousand+ Accidents Annually</div>
+                </div>
+                <div class="glass-effect rounded-2xl p-8 text-center card-premium">
+                    <div class="stats-counter mb-2" data-target="60">0</div>
+                    <div class="text-blue-100 font-medium">% Faster Emergency Response</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-6">
+                         <div class="w-12 h-12 feature-icon rounded-xl flex items-center justify-center mr-3">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold">SecuraRide</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6 max-w-md">Your guardian on every ride. Making roads safer with AI-powered protection, real-time monitoring, and instant emergency response.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Product</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#tech" class="hover:text-white transition-colors">Technology</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Company</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#team" class="hover:text-white transition-colors">Team</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400">
+                <div class="text-center md:text-left">
+                    <p>© 2024 SecuraRide. Built with ❤️ by Amit Kumar. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="notification-toast" id="notificationToast">
+        <div class="flex items-center">
+            <i class="fas fa-check-circle mr-3"></i>
+            <span id="notificationMessage"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

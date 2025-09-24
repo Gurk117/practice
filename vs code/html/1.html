@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/AMIT.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuraRide - Smart Rider Safety &amp; Guardian Alert System</title>
+    <script src="./SecuraRide - Smart Rider Safety &amp; Guardian Alert System_files/saved_resource"></script>
+    <link href="./SecuraRide - Smart Rider Safety &amp; Guardian Alert System_files/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 25%, #ec4899 50%, #f59e0b 75%, #10b981 100%);
+            position: relative;
+        }
+        
+        .hero-gradient::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+            opacity: 0.1;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .card-premium {
+            background: linear-gradient(145deg, #ffffff 0%, #fafbff 100%);
+            box-shadow: 0 25px 50px rgba(99, 102, 241, 0.1), 0 0 0 1px rgba(99, 102, 241, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 24px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+        }
+        
+        .card-premium::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.6), transparent);
+        }
+        
+        .card-premium:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 40px 80px rgba(99, 102, 241, 0.2), 0 0 0 1px rgba(99, 102, 241, 0.2);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+        
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .pulse-glow {
+            animation: pulseGlow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulseGlow {
+            from { box-shadow: 0 0 20px rgba(102, 126, 234, 0.4); }
+            to { box-shadow: 0 0 40px rgba(102, 126, 234, 0.8); }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+            <!DOCTYPE html>
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tech-icon-3d {
+            transform-style: preserve-3d;
+            transition: all 0.3s ease;
+        }
+        
+        .tech-icon-3d:hover {
+            transform: rotateY(15deg) rotateX(15deg) scale(1.1);
+        }
+        
+        .morphing-blob {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            animation: morph 8s ease-in-out infinite;
+        }
+        
+        @keyframes morph {
+            0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+            25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+            50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+            75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+        }
+        
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.9);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .feature-icon {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-icon::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s;
+            opacity: 0;
+        }
+        
+        .feature-icon:hover::before {
+            animation: shine 0.6s ease-in-out;
+            opacity: 1;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+        
+        .timeline-line {
+            background: linear-gradient(to bottom, #6366f1, #8b5cf6, #ec4899);
+            position: relative;
+        }
+        
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6366f1, #8b5cf6);
+            border-radius: 3px;
+        }
+        
+        .stats-counter {
+            font-weight: 800;
+            font-size: 3rem;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .mobile-mockup {
+            background: linear-gradient(145deg, #1f2937, #374151);
+            border-radius: 30px;
+            padding: 8px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        
+        .mobile-screen {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+            border-radius: 22px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .interactive-demo {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .interactive-demo:hover {
+            transform: scale(1.05);
+        }
+        
+        <!DOCTYPE html>
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 4rem 0;
+        }
+        
+        .premium-button {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            border: none;
+            border-radius: 50px;
+            padding: 16px 32px;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+        }
+        
+        .premium-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+        
+        .premium-button:hover::before {
+            left: 100%;
+        }
+        
+        .premium-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(99, 102, 241, 0.5);
+        }
+        
+        .loading-animation {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .error-shake {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        
+        .success-bounce {
+            animation: bounce 0.6s ease-in-out;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .team-card {
+            perspective: 1000px;
+        }
+        
+        .team-card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        
+        .team-card:hover .team-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .team-card-front, .team-card-back {
+            backface-visibility: hidden;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .team-card-back {
+            transform: rotateY(180deg);
+        }
+        
+        .notification-toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 16px 24px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .notification-toast.show {
+            transform: translateX(0);
+        }
+        
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transform-origin: left;
+            transform: scaleX(0);
+            z-index: 1000;
+        }
+        
+        /* Dark Theme Styles */
+        .theme-toggle {
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            border: none;
+            border-radius: 25px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .theme-toggle:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+        }
+        
+        .theme-toggle-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8px;
+        }
+        
+        .theme-toggle::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .sun-icon, .moon-icon {
+            font-size: 12px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .sun-icon {
+            opacity: 1;
+        }
+        
+        .moon-icon {
+            opacity: 0.5;
+        }
+        
+        /* Dark theme active state */
+        body.dark-theme .theme-toggle::before {
+            transform: translateX(30px);
+        }
+        
+        body.dark-theme .sun-icon {
+            opacity: 0.5;
+        }
+        
+        body.dark-theme .moon-icon {
+            opacity: 1;
+        }
+        
+        /* Dark theme variables */
+        body.dark-theme {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-tertiary: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #c3d7f0;
+            --text-muted: #94a3b8;
+            --border-color: #475569;
+            --card-bg: #1e293b;
+            --card-border: #334155;
+        }
+        
+        body {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #1e293b;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --card-bg: #ffffff;
+            --card-border: #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        /* Dark theme overrides */
+        body.dark-theme {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+        }
+        
+        body.dark-theme .bg-white {
+            background-color: var(--bg-secondary) !important;
+        }
+        
+        body.dark-theme .bg-gray-50 {
+            background-color: var(--bg-primary) !important;
+        }
+        
+        body.dark-theme .bg-gray-900 {
+            background-color: #000000 !important;
+        }
+        
+        body.dark-theme .text-gray-900 {
+            color: var(--text-primary) !important;
+        }
+        
+        body.dark-theme .text-gray-600 {
+            color: var(--text-secondary) !important;
+        }
+        
+        body.dark-theme .text-gray-500 {
+            color: var(--text-muted) !important;
+        }
+        
+        body.dark-theme .text-gray-700 {
+            color: var(--text-secondary) !important;
+        }
+        
+        body.dark-theme .card-premium {
+            background: linear-gradient(145deg, var(--card-bg) 0%, var(--bg-tertiary) 100%);
+            border: 1px solid var(--card-border);
+        }
+        
+        body.dark-theme .nav-blur {
+            background: rgba(15, 23, 42, 0.9);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        body.dark-theme .glass-effect {
+            background: rgba(30, 41, 59, 0.3);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+        }
+        
+        /* Interactive Elements */
+        .interactive-particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: particleFloat 3s ease-in-out infinite;
+        }
+        
+        @keyframes particleFloat {
+            0%, 100% { 
+                transform: translateY(0) scale(1);
+                opacity: 0;
+            }
+            50% { 
+                transform: translateY(-100px) scale(1.5);
+                opacity: 1;
+            }
+        }
+        
+        .cursor-trail {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, rgba(85, 105, 197, 0.6) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transition: all 0.1s ease;
+        }
+        
+        .magnetic-element {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .tilt-effect {
+            transform-style: preserve-3d;
+            transition: transform 0.1s ease;
+        }
+        
+        .ripple-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ripple-effect::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .ripple-effect:active::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .parallax-element {
+            transition: transform 0.1s ease-out;
+        }
+        
+        .glow-on-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .glow-on-hover:hover {
+            box-shadow: 0 0 30px rgba(102, 126, 234, 0.6);
+            transform: translateY(-5px);
+        }
+        
+        /* Animated Background Patterns */
+        .animated-bg {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .animated-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+            animation: backgroundShift 10s ease-in-out infinite;
+        }
+        
+        @keyframes backgroundShift {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-20px, -20px) scale(1.1); }
+        }
+        
+        /* Enhanced Hover Effects */
+        .enhanced-hover {
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .enhanced-hover::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .enhanced-hover:hover::after {
+            opacity: 1;
+        }
+        
+        .enhanced-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+        
+        /* Smooth Transitions */
+        * {
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+        
+        /* Additional Keyframes */
+        @keyframes ripple {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-bottom-2{bottom:-0.5rem}.bottom-20{bottom:5rem}.bottom-40{bottom:10rem}.left-0{left:0px}.left-1\/2{left:50%}.left-10{left:2.5rem}.left-20{left:5rem}.right-10{right:2.5rem}.right-20{right:5rem}.top-0{top:0px}.top-20{top:5rem}.top-40{top:10rem}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-10{margin-left:2.5rem}.ml-2{margin-left:0.5rem}.mr-1{margin-right:0.25rem}.mr-2{margin-right:0.5rem}.mr-3{margin-right:0.75rem}.mr-4{margin-right:1rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-20{margin-top:5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-auto{margin-top:auto}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-24{height:6rem}.h-3{height:0.75rem}.h-32{height:8rem}.h-40{height:10rem}.h-60{height:15rem}.h-8{height:2rem}.h-80{height:20rem}.h-96{height:24rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-20{width:5rem}.w-24{width:6rem}.w-32{width:8rem}.w-40{width:10rem}.w-60{width:15rem}.w-8{width:2rem}.w-80{width:20rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.flex-shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-16 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(4rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(4rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-opacity-30{--tw-border-opacity:0.3}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.bg-green-400{--tw-bg-opacity:1;background-color:rgb(74 222 128 / var(--tw-bg-opacity, 1))}.bg-green-50{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-indigo-200{--tw-bg-opacity:1;background-color:rgb(199 210 254 / var(--tw-bg-opacity, 1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.bg-purple-50{--tw-bg-opacity:1;background-color:rgb(250 245 255 / var(--tw-bg-opacity, 1))}.bg-purple-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-violet-200{--tw-bg-opacity:1;background-color:rgb(221 214 254 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-yellow-50{--tw-bg-opacity:1;background-color:rgb(254 252 232 / var(--tw-bg-opacity, 1))}.bg-opacity-10{--tw-bg-opacity:0.1}.bg-opacity-15{--tw-bg-opacity:0.15}.bg-opacity-20{--tw-bg-opacity:0.2}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-blue-50{--tw-gradient-from:#eff6ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(239 246 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-500{--tw-gradient-from:#3b82f6 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 130 246 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-600{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-gray-900{--tw-gradient-from:#111827 var(--tw-gradient-from-position);--tw-gradient-to:rgb(17 24 39 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-green-500{--tw-gradient-from:#22c55e var(--tw-gradient-from-position);--tw-gradient-to:rgb(34 197 94 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-orange-500{--tw-gradient-from:#f97316 var(--tw-gradient-from-position);--tw-gradient-to:rgb(249 115 22 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-500{--tw-gradient-from:#a855f7 var(--tw-gradient-from-position);--tw-gradient-to:rgb(168 85 247 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-red-500{--tw-gradient-from:#ef4444 var(--tw-gradient-from-position);--tw-gradient-to:rgb(239 68 68 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-50{--tw-gradient-from:#f8fafc var(--tw-gradient-from-position);--tw-gradient-to:rgb(248 250 252 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-yellow-500{--tw-gradient-from:#eab308 var(--tw-gradient-from-position);--tw-gradient-to:rgb(234 179 8 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-blue-900{--tw-gradient-to:rgb(30 58 138 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #1e3a8a var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-blue-600{--tw-gradient-to:#2563eb var(--tw-gradient-to-position)}.to-green-600{--tw-gradient-to:#16a34a var(--tw-gradient-to-position)}.to-indigo-50{--tw-gradient-to:#eef2ff var(--tw-gradient-to-position)}.to-orange-600{--tw-gradient-to:#ea580c var(--tw-gradient-to-position)}.to-purple-50{--tw-gradient-to:#faf5ff var(--tw-gradient-to-position)}.to-purple-600{--tw-gradient-to:#9333ea var(--tw-gradient-to-position)}.to-purple-900{--tw-gradient-to:#581c87 var(--tw-gradient-to-position)}.to-red-600{--tw-gradient-to:#dc2626 var(--tw-gradient-to-position)}.to-yellow-600{--tw-gradient-to:#ca8a04 var(--tw-gradient-to-position)}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.pb-16{padding-bottom:4rem}.pt-20{padding-top:5rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.text-blue-100{--tw-text-opacity:1;color:rgb(219 234 254 / var(--tw-text-opacity, 1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-green-300{--tw-text-opacity:1;color:rgb(134 239 172 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-green-500{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-orange-500{--tw-text-opacity:1;color:rgb(249 115 22 / var(--tw-text-opacity, 1))}.text-orange-600{--tw-text-opacity:1;color:rgb(234 88 12 / var(--tw-text-opacity, 1))}.text-purple-500{--tw-text-opacity:1;color:rgb(168 85 247 / var(--tw-text-opacity, 1))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.text-yellow-500{--tw-text-opacity:1;color:rgb(234 179 8 / var(--tw-text-opacity, 1))}.opacity-10{opacity:0.1}.opacity-30{opacity:0.3}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:bg-blue-50:hover{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-600:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.hover\:bg-red-600:hover{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.hover\:bg-opacity-20:hover{--tw-bg-opacity:0.2}.hover\:text-blue-300:hover{--tw-text-opacity:1;color:rgb(147 197 253 / var(--tw-text-opacity, 1))}.hover\:text-blue-600:hover{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:translate-x-2{--tw-translate-x:0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:mt-0{margin-top:0px}.md\:block{display:block}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:text-left{text-align:left}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}}@media (min-width: 1024px){.lg\:mb-0{margin-bottom:0px}.lg\:block{display:block}.lg\:w-5\/12{width:41.666667%}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:justify-start{justify-content:flex-start}.lg\:justify-end{justify-content:flex-end}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:pl-12{padding-left:3rem}.lg\:pr-12{padding-right:3rem}.lg\:text-left{text-align:left}}</style></head>
+<body class="bg-gray-50" style="opacity: 1; transition: opacity 0.5s;">
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator" style="transform: scaleX(0);"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-12 h-12 feature-icon rounded-xl flex items-center justify-center mr-3">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold gradient-text">SecuraRide</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="http://127.0.0.1:5500/AMIT.html#features" class="text-gray-700 hover:text-blue-600 px-4 py-2 text-sm font-medium transition-all duration-300 hover:bg-blue-50 rounded-lg">Features</a>
+                        <a href="http://127.0.0.1:5500/AMIT.html#tech" class="text-gray-700 hover:text-blue-600 px-4 py-2 text-sm font-medium transition-all duration-300 hover:bg-blue-50 rounded-lg">Technology</a>
+                        <a href="http://127.0.0.1:5500/AMIT.html#impact" class="text-gray-700 hover:text-blue-600 px-4 py-2 text-sm font-medium transition-all duration-300 hover:bg-blue-50 rounded-lg">Impact</a>
+                        <a href="http://127.0.0.1:5500/AMIT.html#team" class="text-gray-700 hover:text-blue-600 px-4 py-2 text-sm font-medium transition-all duration-300 hover:bg-blue-50 rounded-lg">Team</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark Mode">
+                        <div class="theme-toggle-inner">
+                            <i class="fas fa-sun sun-icon"></i>
+                            <i class="fas fa-moon moon-icon"></i>
+                        </div>
+                    </button>
+                    <button class="premium-button" onclick="showNotification(&#39;Coming Soon!&#39;, &#39;success&#39;)">
+                        <i class="fas fa-rocket mr-2"></i>Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-white bg-opacity-20 rounded-full floating-animation" style="animation-delay: 0s;"></div>
+        <div class="absolute top-40 right-20 w-16 h-16 bg-white bg-opacity-15 rounded-full floating-animation" style="animation-delay: 2s;"></div>
+        <div class="absolute bottom-40 left-20 w-24 h-24 bg-white bg-opacity-10 rounded-full floating-animation" style="animation-delay: 4s;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center bg-white bg-opacity-20 rounded-full px-6 py-3 mb-8 glass-effect">
+                        <i class="fas fa-shield-alt text-emerald-300 mr-2"></i>
+                        <span class="text-white font-medium">Advanced Rider Safety Platform</span>
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+                        Your Guardian on
+                        <span class="text-yellow-300 relative">
+                            Every Ride
+                            <svg class="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 300 12" fill="none">
+                                <path d="M0 6C50 2 100 10 150 6C200 2 250 10 300 6" stroke="currentColor" stroke-width="3" fill="none"></path>
+                            </svg>
+                        </span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl text-blue-100 mb-10 leading-relaxed max-w-2xl">
+                        Revolutionary AI-powered rider safety platform with real-time monitoring, guardian alerts, and emergency response for two-wheeler riders across India
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center mb-12">
+                        <button class="premium-button interactive-demo" onclick="startDemo()">
+                            <i class="fas fa-play mr-2"></i>
+                            <span>Watch Demo</span>
+                        </button>
+                        <button class="glass-effect text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-30" onclick="downloadApp()">
+                            <i class="fas fa-download mr-2"></i>Download App
+                        </button>
+                    </div>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="flex flex-wrap justify-center lg:justify-start items-center gap-8 text-blue-100">
+                        <div class="flex items-center">
+                            <i class="fas fa-users mr-2"></i>
+                            <span class="font-medium">50K+ Active Users</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-star mr-2 text-yellow-300"></i>
+                            <span class="font-medium">4.8/5 Rating</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-check mr-2 text-emerald-300"></i>
+                            <span class="font-medium">24/7 Protection</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Mobile Mockup -->
+                <div class="flex justify-center lg:justify-end">
+                    <div class="mobile-mockup floating-animation">
+                        <div class="mobile-screen w-80 h-96 p-6 relative">
+                            <!-- Phone UI Mockup -->
+                            <div class="bg-white bg-opacity-10 rounded-2xl p-4 h-full flex flex-col">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-2">
+                                            <i class="fas fa-shield-alt text-blue-600 text-sm"></i>
+                                        </div>
+                                        <span class="text-white font-semibold">SecuraRide</span>
+                                    </div>
+                                    <div class="text-white text-sm">
+                                        <i class="fas fa-signal mr-1"></i>
+                                        <i class="fas fa-wifi mr-1"></i>
+                                        <i class="fas fa-battery-three-quarters"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white bg-opacity-20 rounded-xl p-4 mb-4">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-white text-sm">Current Speed</span>
+                                        <span class="text-green-300 text-sm">Safe</span>
+                                    </div>
+                                    <div class="text-white text-2xl font-bold">45 km/h</div>
+                                </div>
+                                
+                                <div class="bg-white bg-opacity-20 rounded-xl p-4 mb-4">
+                                    <div class="text-white text-sm mb-2">Guardian Status</div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-green-400 rounded-full mr-2 pulse-glow"></div>
+                                        <span class="text-white text-sm">Mom &amp; Dad Connected</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-auto">
+                                    <button class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-xl font-semibold transition-colors duration-300 pulse-glow">
+                                        <i class="fas fa-exclamation-triangle mr-2"></i>
+                                        Emergency SOS
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero Stats -->
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-effect rounded-2xl p-8 text-center card-premium animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="stats-counter mb-2 animate-in" data-target="50" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">50</div>
+                    <div class="text-blue-100 font-medium">Million+ Riders in India</div>
+                </div>
+                <div class="glass-effect rounded-2xl p-8 text-center card-premium animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="stats-counter mb-2 animate-in" data-target="150" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">150</div>
+                    <div class="text-blue-100 font-medium">Thousand+ Accidents Annually</div>
+                </div>
+                <div class="glass-effect rounded-2xl p-8 text-center card-premium animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="stats-counter mb-2 animate-in" data-target="60" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">60</div>
+                    <div class="text-blue-100 font-medium">% Faster Emergency Response</div>
+                </div>
+            </div>
+        </div>
+    <div class="interactive-particle" style="left: 56.6042%; bottom: 0px;"></div><div class="interactive-particle" style="left: 43.2301%; bottom: 0px;"></div></section>
+
+    <!-- Problem Statement -->
+    <section class="py-20 bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-purple-600"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-red-50 text-red-600 rounded-full px-6 py-3 mb-6">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                    <span class="font-semibold">Critical Challenge</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">The Problem We're Solving</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Road safety for two-wheeler riders remains a critical issue with rising accidents and lack of timely emergency response</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-premium p-8 text-center group animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 morphing-blob">
+                        <i class="fas fa-car-crash text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Rising Accidents</h3>
+                    <p class="text-gray-600 leading-relaxed">Increasing number of two-wheeler accidents due to overspeeding, reckless driving, and poor road conditions</p>
+                    <div class="mt-6 text-red-500 font-bold text-3xl">1.5L+</div>
+                    <div class="text-gray-500 text-sm">Annual accidents in India</div>
+                </div>
+                
+                <div class="card-premium p-8 text-center group animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 morphing-blob">
+                        <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Limited Solutions</h3>
+                    <p class="text-gray-600 leading-relaxed">Current apps only provide basic location sharing without real-time safety monitoring or intelligent alerts</p>
+                    <div class="mt-6 text-orange-500 font-bold text-3xl">85%</div>
+                    <div class="text-gray-500 text-sm">Lack proper safety features</div>
+                </div>
+                
+                <div class="card-premium p-8 text-center group animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6 morphing-blob">
+                        <i class="fas fa-clock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Delayed Response</h3>
+                    <p class="text-gray-600 leading-relaxed">Lack of immediate guardian alerts and emergency response leads to critical delays in accident situations</p>
+                    <div class="mt-6 text-yellow-500 font-bold text-3xl">15min</div>
+                    <div class="text-gray-500 text-sm">Average response delay</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gradient-to-br from-slate-50 to-indigo-50 relative overflow-hidden">
+        <div class="absolute top-20 right-10 w-32 h-32 bg-indigo-200 rounded-full opacity-30 floating-animation"></div>
+        <div class="absolute bottom-20 left-10 w-24 h-24 bg-violet-200 rounded-full opacity-30 floating-animation" style="animation-delay: 3s;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-blue-100 text-blue-600 rounded-full px-6 py-3 mb-6">
+                    <i class="fas fa-magic mr-2"></i>
+                    <span class="font-semibold">Smart Features</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Revolutionary Safety Features</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Comprehensive protection powered by cutting-edge AI and IoT technology</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-premium p-8 group enhanced-hover glow-on-hover tilt-effect ripple-effect magnetic-element animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="feature-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Real-Time Monitoring</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Live tracking of speed, route, and ride statistics with instant updates and intelligent analysis</p>
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+                
+                <div class="card-premium p-8 group enhanced-hover glow-on-hover tilt-effect ripple-effect magnetic-element animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="feature-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Guardian Notifications</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Instant alerts to trusted contacts on overspeeding, falls, or unusual stops with precise location</p>
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+                
+                <div class="card-premium p-8 group enhanced-hover glow-on-hover tilt-effect ripple-effect magnetic-element animate-in" style="opacity: 1; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="feature-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-exclamation-triangle text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Emergency SOS</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">One-tap distress alert with precise location sharing to emergency contacts and services</p>
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+                
+                <div class="card-premium p-8 group enhanced-hover glow-on-hover tilt-effect ripple-effect magnetic-element animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="feature-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-user-shield text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Privacy Controls</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Complete control over data sharing - choose speed only, route only, or both with granular permissions</p>
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+                
+                <div class="card-premium p-8 group enhanced-hover glow-on-hover tilt-effect ripple-effect magnetic-element animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="feature-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI Accident Detection</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Advanced machine learning algorithms detect falls, abnormal motion, or prolonged idle states</p>
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+                
+                <div class="card-premium p-8 group enhanced-hover glow-on-hover tilt-effect ripple-effect magnetic-element animate-in" style="opacity: 1; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="feature-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Cross-Platform</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Available on Android, iOS, and Progressive Web App for universal access and seamless experience</p>
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-green-100 text-green-600 rounded-full px-6 py-3 mb-6">
+                    <i class="fas fa-heart mr-2"></i>
+                    <span class="font-semibold">Who We Protect</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Designed for Every Rider</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Comprehensive safety solutions tailored for different rider needs and lifestyles</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card-premium p-8 text-center group animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto mb-6 morphing-blob">
+                        <i class="fas fa-graduation-cap text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Students &amp; Youth</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">Peace of mind for parents with real-time safety updates and location sharing</p>
+                    <div class="text-blue-500 font-bold text-2xl">2.5M+</div>
+                    <div class="text-gray-500 text-sm">College students riding daily</div>
+                </div>
+                
+                <div class="card-premium p-8 text-center group animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="w-24 h-24 bg-gradient-to-br from-green-500 to-green-600 rounded-3xl flex items-center justify-center mx-auto mb-6 morphing-blob">
+                        <i class="fas fa-motorcycle text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Delivery Workers</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">Enhanced safety during long shifts and multiple deliveries across the city</p>
+                    <div class="text-green-500 font-bold text-2xl">5M+</div>
+                    <div class="text-gray-500 text-sm">Gig economy riders</div>
+                </div>
+                
+                <div class="card-premium p-8 text-center group animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="w-24 h-24 bg-gradient-to-br from-purple-500 to-purple-600 rounded-3xl flex items-center justify-center mx-auto mb-6 morphing-blob">
+                        <i class="fas fa-female text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Women Riders</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">Extra protection for late-night commutes and solo rides with emergency features</p>
+                    <div class="text-purple-500 font-bold text-2xl">8M+</div>
+                    <div class="text-gray-500 text-sm">Women two-wheeler users</div>
+                </div>
+                
+                <div class="card-premium p-8 text-center group animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="w-24 h-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-3xl flex items-center justify-center mx-auto mb-6 morphing-blob">
+                        <i class="fas fa-briefcase text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Daily Commuters</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">Comprehensive protection against daily road risks and traffic hazards</p>
+                    <div class="text-orange-500 font-bold text-2xl">35M+</div>
+                    <div class="text-gray-500 text-sm">Regular commuters</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section id="tech" class="py-20 bg-gray-900 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900"></div>
+        <div class="absolute top-0 left-0 w-full h-full opacity-10">
+            <div class="absolute top-20 left-20 w-40 h-40 bg-blue-500 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-20 w-60 h-60 bg-purple-500 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-white bg-opacity-10 text-white rounded-full px-6 py-3 mb-6 glass-effect">
+                    <i class="fas fa-cogs mr-2"></i>
+                    <span class="font-semibold">Technology Stack</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Powered by Cutting-Edge Technology</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">Advanced tech stack ensuring reliability, speed, and accuracy in every safety feature</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">
+                <div class="text-center tech-icon-3d">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-2xl">
+                        <i class="fab fa-react text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-1">React</h4>
+                    <p class="text-gray-400 text-sm">Frontend Framework</p>
+                </div>
+                
+                <div class="text-center tech-icon-3d">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-2xl">
+                        <i class="fab fa-node-js text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-1">Node.js</h4>
+                    <p class="text-gray-400 text-sm">Backend Runtime</p>
+                </div>
+                
+                <div class="text-center tech-icon-3d">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-2xl">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-1">TensorFlow</h4>
+                    <p class="text-gray-400 text-sm">AI/ML Engine</p>
+                </div>
+                
+                <div class="text-center tech-icon-3d">
+                    <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-2xl">
+                        <i class="fas fa-microchip text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-1">ESP32</h4>
+                    <p class="text-gray-400 text-sm">IoT Hardware</p>
+                </div>
+                
+                <div class="text-center tech-icon-3d">
+                    <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-2xl">
+                        <i class="fas fa-bluetooth text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-1">Bluetooth LE</h4>
+                    <p class="text-gray-400 text-sm">Connectivity</p>
+                </div>
+                
+                <div class="text-center tech-icon-3d">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-2xl">
+                        <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-1">PWA</h4>
+                    <p class="text-gray-400 text-sm">Web Application</p>
+                </div>
+            </div>
+            
+            <!-- Tech Architecture -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="glass-effect rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-layer-group text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Frontend Layer</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>React + TypeScript</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Tailwind CSS</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Progressive Web App</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Real-time Updates</li>
+                    </ul>
+                </div>
+                
+                <div class="glass-effect rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-server text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Backend Layer</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Node.js + Express</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>MongoDB Database</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>WebSocket Support</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>RESTful APIs</li>
+                    </ul>
+                </div>
+                
+                <div class="glass-effect rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-microchip text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Hardware Layer</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>ESP32 Microcontroller</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>BLE Communication</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>GPS &amp; Accelerometer</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Low Power Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-purple-100 text-purple-600 rounded-full px-6 py-3 mb-6">
+                    <i class="fas fa-route mr-2"></i>
+                    <span class="font-semibold">How It Works</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Simple, Seamless Protection</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Six easy steps to complete rider safety and peace of mind</p>
+            </div>
+            
+            <div class="relative">
+                <div class="timeline-line absolute left-1/2 transform -translate-x-1/2 w-2 h-full hidden lg:block"></div>
+                
+                <div class="space-y-16">
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <div class="lg:w-5/12 lg:pr-12 mb-8 lg:mb-0">
+                            <div class="card-premium p-8 animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4">
+                                        <i class="fas fa-play text-white"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-gray-900">Start Your Ride</h3>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed">SecuraRide automatically connects to your BLE sensors when you begin riding. No manual setup required.</p>
+                            </div>
+                        </div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl z-10 shadow-2xl">1</div>
+                        <div class="lg:w-5/12 lg:pl-12"></div>
+                    </div>
+                    
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <div class="lg:w-5/12 lg:pr-12"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl z-10 shadow-2xl">2</div>
+                        <div class="lg:w-5/12 lg:pl-12 mb-8 lg:mb-0">
+                            <div class="card-premium p-8 animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-4">
+                                        <i class="fas fa-database text-white"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-gray-900">Data Collection</h3>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed">Real-time monitoring of speed, tilt, brake patterns, GPS location, and environmental conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <div class="lg:w-5/12 lg:pr-12 mb-8 lg:mb-0">
+                            <div class="card-premium p-8 animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mr-4">
+                                        <i class="fas fa-brain text-white"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-gray-900">AI Monitoring</h3>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed">Advanced algorithms analyze riding patterns and detect anomalies like overspeeding, falls, or unusual stops.</p>
+                            </div>
+                        </div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl z-10 shadow-2xl">3</div>
+                        <div class="lg:w-5/12 lg:pl-12"></div>
+                    </div>
+                    
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <div class="lg:w-5/12 lg:pr-12"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-xl z-10 shadow-2xl">4</div>
+                        <div class="lg:w-5/12 lg:pl-12 mb-8 lg:mb-0">
+                            <div class="card-premium p-8 animate-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mr-4">
+                                        <i class="fas fa-bell text-white"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-gray-900">Guardian Alerts</h3>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed">Instant notifications sent to trusted contacts with live location data and emergency details.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <div class="lg:w-5/12 lg:pr-12 mb-8 lg:mb-0">
+                            <div class="card-premium p-8" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mr-4">
+                                        <i class="fas fa-exclamation-triangle text-white"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-gray-900">Emergency Response</h3>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed">One-tap SOS button for manual alerts anytime during the ride with immediate emergency services contact.</p>
+                            </div>
+                        </div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-xl z-10 shadow-2xl">5</div>
+                        <div class="lg:w-5/12 lg:pl-12"></div>
+                    </div>
+                    
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <div class="lg:w-5/12 lg:pr-12"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center text-white font-bold text-xl z-10 shadow-2xl">6</div>
+                        <div class="lg:w-5/12 lg:pl-12 mb-8 lg:mb-0">
+                            <div class="card-premium p-8" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center mr-4">
+                                        <i class="fas fa-chart-line text-white"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-gray-900">Ride Summary</h3>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed">Detailed ride report with safety metrics sent to both rider and guardians upon completion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-green-100 text-green-600 rounded-full px-6 py-3 mb-6">
+                    <i class="fas fa-chart-line mr-2"></i>
+                    <span class="font-semibold">Real Impact</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Making Roads Safer</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Measurable positive impact we're creating for riders and families across India</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="card-premium p-8 text-center" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tachometer-alt text-white text-2xl"></i>
+                    </div>
+                    <div class="stats-counter mb-2" data-target="60" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">60</div>
+                    <div class="text-gray-600 font-medium">% Faster Emergency Response</div>
+                    <p class="text-gray-500 text-sm mt-2">Average response time reduced from 15 to 6 minutes</p>
+                </div>
+                
+                <div class="card-premium p-8 text-center" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-check text-white text-2xl"></i>
+                    </div>
+                    <div class="stats-counter mb-2" data-target="40" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">40</div>
+                    <div class="text-gray-600 font-medium">% Reduction in Overspeeding</div>
+                    <p class="text-gray-500 text-sm mt-2">Behavioral change through real-time monitoring</p>
+                </div>
+                
+                <div class="card-premium p-8 text-center" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <div class="stats-counter mb-2" data-target="85" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">85</div>
+                    <div class="text-gray-600 font-medium">% Guardian Peace of Mind</div>
+                    <p class="text-gray-500 text-sm mt-2">Satisfaction rate from family members</p>
+                </div>
+                
+                <div class="card-premium p-8 text-center" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-white text-2xl"></i>
+                    </div>
+                    <div class="stats-counter mb-2" data-target="24" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">24</div>
+                    <div class="text-gray-600 font-medium">/7 Continuous Protection</div>
+                    <p class="text-gray-500 text-sm mt-2">Round-the-clock safety monitoring</p>
+                </div>
+            </div>
+            
+            <!-- Success Stories -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card-premium p-8" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-quote-left text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Priya Sharma</h4>
+                            <p class="text-gray-600 text-sm">College Student, Delhi</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">"SecuraRide gave my parents peace of mind when I started riding to college. The real-time alerts helped them track my safety without being intrusive."</p>
+                    <div class="flex items-center text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="ml-2 text-gray-600">5.0/5</span>
+                    </div>
+                </div>
+                
+                <div class="card-premium p-8" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-quote-left text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Rajesh Kumar</h4>
+                            <p class="text-gray-600 text-sm">Delivery Executive, Mumbai</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">"As a delivery rider, SecuraRide's accident detection saved my life when I had a fall. My family was immediately notified and help arrived within minutes."</p>
+                    <div class="flex items-center text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="ml-2 text-gray-600">5.0/5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Scope -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-purple-100 text-purple-600 rounded-full px-6 py-3 mb-6">
+                    <i class="fas fa-rocket mr-2"></i>
+                    <span class="font-semibold">Future Innovations</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">What's Coming Next</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Exciting features and innovations coming soon to enhance your riding experience</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card-premium p-8 group" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-microphone text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Voice Assistant Integration</h3>
+                            <div class="text-blue-600 text-sm font-medium">Coming Q2 2024</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">"Hey SecuraRide, send SOS to Dad" - Hands-free emergency alerts and voice-controlled safety features for safer riding.</p>
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+                
+                <div class="card-premium p-8 group" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-file-medical text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Insurance Integration</h3>
+                            <div class="text-green-600 text-sm font-medium">Coming Q3 2024</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">Automatic claim initiation and faster insurance processing with direct integration to major insurance providers.</p>
+                    <div class="flex items-center text-green-600 font-semibold">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+                
+                <div class="card-premium p-8 group" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-users text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Community Help Network</h3>
+                            <div class="text-purple-600 text-sm font-medium">Coming Q4 2024</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">Nearest SecuraRide riders notified to assist in emergencies, creating a community-driven safety network.</p>
+                    <div class="flex items-center text-purple-600 font-semibold">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+                
+                <div class="card-premium p-8 group" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-trophy text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Gamification &amp; Rewards</h3>
+                            <div class="text-orange-600 text-sm font-medium">Coming Q1 2025</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">Safety scores, achievements, and rewards for careful riding habits to encourage safer driving behavior.</p>
+                    <div class="flex items-center text-orange-600 font-semibold">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-blue-100 text-blue-600 rounded-full px-6 py-3 mb-6">
+                    <i class="fas fa-users mr-2"></i>
+                    <span class="font-semibold">Our Team</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Meet the Innovators</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Passionate experts working together to revolutionize rider safety across India</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="team-card h-80">
+                    <div class="team-card-inner card-premium p-8 h-full" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                        <div class="team-card-front text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-microchip text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Hardware Engineer</h3>
+                            <p class="text-gray-600 mb-4">BLE + IoT integration specialist</p>
+                            <div class="flex justify-center space-x-2">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="team-card-back bg-blue-50 rounded-2xl p-6 text-center">
+                            <h4 class="font-bold text-gray-900 mb-4">Expertise</h4>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li>• ESP32 Development</li>
+                                <li>• Bluetooth LE Protocol</li>
+                                <li>• Sensor Integration</li>
+                                <li>• Power Optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card h-80">
+                    <div class="team-card-inner card-premium p-8 h-full" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                        <div class="team-card-front text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fab fa-react text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Frontend Developer</h3>
+                            <p class="text-gray-600 mb-4">React PWA UI expert</p>
+                            <div class="flex justify-center space-x-2">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="team-card-back bg-green-50 rounded-2xl p-6 text-center">
+                            <h4 class="font-bold text-gray-900 mb-4">Expertise</h4>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li>• React &amp; TypeScript</li>
+                                <li>• Progressive Web Apps</li>
+                                <li>• Mobile-First Design</li>
+                                <li>• Real-time Updates</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card h-80">
+                    <div class="team-card-inner card-premium p-8 h-full" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                        <div class="team-card-front text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-server text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Backend Developer</h3>
+                            <p class="text-gray-600 mb-4">APIs &amp; data pipeline architect</p>
+                            <div class="flex justify-center space-x-2">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="team-card-back bg-purple-50 rounded-2xl p-6 text-center">
+                            <h4 class="font-bold text-gray-900 mb-4">Expertise</h4>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li>• Node.js &amp; Express</li>
+                                <li>• Database Design</li>
+                                <li>• API Development</li>
+                                <li>• Cloud Architecture</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card h-80">
+                    <div class="team-card-inner card-premium p-8 h-full" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                        <div class="team-card-front text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-brain text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">AI/ML Engineer</h3>
+                            <p class="text-gray-600 mb-4">Accident detection specialist</p>
+                            <div class="flex justify-center space-x-2">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="team-card-back bg-red-50 rounded-2xl p-6 text-center">
+                            <h4 class="font-bold text-gray-900 mb-4">Expertise</h4>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li>• TensorFlow &amp; PyTorch</li>
+                                <li>• Computer Vision</li>
+                                <li>• Pattern Recognition</li>
+                                <li>• Edge Computing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card h-80">
+                    <div class="team-card-inner card-premium p-8 h-full" style="opacity: 0; transform: translateY(50px); transition: opacity 0.6s, transform 0.6s;">
+                        <div class="team-card-front text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-palette text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">UI/UX Designer</h3>
+                            <p class="text-gray-600 mb-4">Figma prototyping expert</p>
+                            <div class="flex justify-center space-x-2">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="team-card-back bg-yellow-50 rounded-2xl p-6 text-center">
+                            <h4 class="font-bold text-gray-900 mb-4">Expertise</h4>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li>• User Experience Design</li>
+                                <li>• Figma &amp; Sketch</li>
+                                <li>• Design Systems</li>
+                                <li>• User Research</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 hero-gradient relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center bg-white bg-opacity-20 text-white rounded-full px-6 py-3 mb-8 glass-effect">
+                <i class="fas fa-rocket mr-2"></i>
+                <span class="font-semibold">Ready to Transform Rider Safety?</span>
+            </div>
+            
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Join the Safety Revolution</h2>
+            <p class="text-xl text-blue-100 mb-10 leading-relaxed">Be part of thousands of riders who trust SecuraRide for their daily protection and peace of mind</p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+                <button class="premium-button text-lg px-10 py-5" onclick="downloadApp()">
+                    <i class="fas fa-download mr-2"></i>
+                    <span>Download Now</span>
+                </button>
+                <button class="glass-effect text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-30" onclick="startDemo()">
+                    <i class="fas fa-play mr-2"></i>Watch Demo
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-blue-100">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-shield-alt mr-3 text-emerald-300"></i>
+                    <span class="font-medium">Advanced Safety Technology</span>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-users mr-3"></i>
+                    <span class="font-medium">50,000+ Active Users</span>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-star mr-3 text-yellow-300"></i>
+                    <span class="font-medium">4.8/5 User Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 feature-icon rounded-xl flex items-center justify-center mr-3">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold">SecuraRide</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6 max-w-md">Your guardian on every ride. Making roads safer with AI-powered protection, real-time monitoring, and instant emergency response.</p>
+                    <div class="flex space-x-4">
+                        <a href="http://127.0.0.1:5500/AMIT.html#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="http://127.0.0.1:5500/AMIT.html#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="http://127.0.0.1:5500/AMIT.html#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="http://127.0.0.1:5500/AMIT.html#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Product</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="http://127.0.0.1:5500/AMIT.html#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="http://127.0.0.1:5500/AMIT.html#tech" class="hover:text-white transition-colors">Technology</a></li>
+                        <li><a href="http://127.0.0.1:5500/AMIT.html#" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="http://127.0.0.1:5500/AMIT.html#" class="hover:text-white transition-colors">Download</a></li>
+                        <li><a href="http://127.0.0.1:5500/AMIT.html#" class="hover:text-white transition-colors">API Docs</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Company</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="http://127.0.0.1:5500/AMIT.html#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="http://127.0.0.1:5500/AMIT.html#team" class="hover:text-white transition-colors">Team</a></li>
+                        <li><a href="http://127.0.0.1:5500/AMIT.html#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="http://127.0.0.1:5500/AMIT.html#" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="http://127.0.0.1:5500/AMIT.html#" class="hover:text-white transition-colors">Press Kit</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center text-gray-400">
+                <div class="text-center md:text-left">
+                    <p>© 2024 SecuraRide. Built with ❤️ by Amit Kumar. All rights reserved.</p>
+                    <p class="text-sm mt-1">Contact: <a href="mailto:amitkumar@securaride.com" class="text-blue-400 hover:text-blue-300">amitkumar@securaride.com</a></p>
+                </div>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="http://127.0.0.1:5500/AMIT.html#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="http://127.0.0.1:5500/AMIT.html#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="http://127.0.0.1:5500/AMIT.html#" class="hover:text-white transition-colors">Safety Guidelines</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div class="notification-toast" id="notificationToast" style="background: linear-gradient(135deg, rgb(16, 185, 129) 0%, rgb(5, 150, 105) 100%);">
+        <div class="flex items-center">
+            <i class="fas fa-check-circle mr-3"></i>
+            <span id="notificationMessage">🚀 Welcome to SecuraRide! Try hovering over cards and use Ctrl+D for dark mode!</span>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navigation background on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            const scrollIndicator = document.getElementById('scrollIndicator');
+            
+            if (window.scrollY > 100) {
+                nav.classList.add('nav-blur');
+            } else {
+                nav.classList.remove('nav-blur');
+            }
+            
+            // Update scroll progress
+            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            scrollIndicator.style.transform = `scaleX(${scrollPercent / 100})`;
+        });
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stats-counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+                
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = Math.ceil(current);
+                        setTimeout(updateCounter, 20);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                
+                updateCounter();
+            });
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('stats-counter')) {
+                        animateCounters();
+                    }
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.card-premium, .stats-counter').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Notification system
+        function showNotification(message, type = 'success') {
+            const toast = document.getElementById('notificationToast');
+            const messageEl = document.getElementById('notificationMessage');
+            
+            messageEl.textContent = message;
+            
+            if (type === 'error') {
+                toast.style.background = 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)';
+                toast.classList.add('error-shake');
+            } else {
+                toast.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+                toast.classList.add('success-bounce');
+            }
+            
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => {
+                    toast.classList.remove('error-shake', 'success-bounce');
+                }, 300);
+            }, 3000);
+        }
+
+        // Demo functionality
+        function startDemo() {
+            showNotification('🚀 Demo launching soon! Stay tuned for our live demonstration.', 'success');
+        }
+
+        function downloadApp() {
+            showNotification('📱 App launching soon! We\'ll notify you when SecuraRide is available.', 'success');
+        }
+
+        // Error handling
+        window.addEventListener('error', function(e) {
+            console.error('Error caught:', e.error);
+            showNotification('Something went wrong. Please try again.', 'error');
+        });
+
+        // Dark Theme Toggle
+        function toggleTheme() {
+            const body = document.body;
+            const isDark = body.classList.contains('dark-theme');
+            
+            if (isDark) {
+                body.classList.remove('dark-theme');
+                localStorage.setItem('theme', 'light');
+                showNotification('🌞 Light mode activated!', 'success');
+            } else {
+                body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+                showNotification('🌙 Dark mode activated!', 'success');
+            }
+        }
+
+        // Load saved theme
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+            }
+        }
+
+        // Cursor Trail Effect
+        function createCursorTrail() {
+            const trail = document.createElement('div');
+            trail.className = 'cursor-trail';
+            document.body.appendChild(trail);
+            
+            let mouseX = 0, mouseY = 0;
+            let trailX = 0, trailY = 0;
+            
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+            
+            function animateTrail() {
+                trailX += (mouseX - trailX) * 0.1;
+                trailY += (mouseY - trailY) * 0.1;
+                
+                trail.style.left = trailX - 10 + 'px';
+                trail.style.top = trailY - 10 + 'px';
+                
+                requestAnimationFrame(animateTrail);
+            }
+            
+            animateTrail();
+        }
+
+        // Interactive Particles
+        function createParticles() {
+            const hero = document.querySelector('.hero-gradient');
+            if (!hero) return;
+            
+            setInterval(() => {
+                const particle = document.createElement('div');
+                particle.className = 'interactive-particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.bottom = '0px';
+                hero.appendChild(particle);
+                
+                setTimeout(() => {
+                    if (particle.parentNode) {
+                        particle.parentNode.removeChild(particle);
+                    }
+                }, 3000);
+            }, 2000);
+        }
+
+        // Magnetic Effect for Elements
+        function addMagneticEffect() {
+            const magneticElements = document.querySelectorAll('.magnetic-element');
+            
+            magneticElements.forEach(element => {
+                element.addEventListener('mousemove', (e) => {
+                    const rect = element.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    
+                    const moveX = x * 0.1;
+                    const moveY = y * 0.1;
+                    
+                    element.style.transform = `translate(${moveX}px, ${moveY}px)`;
+                });
+                
+                element.addEventListener('mouseleave', () => {
+                    element.style.transform = 'translate(0, 0)';
+                });
+            });
+        }
+
+        // Tilt Effect
+        function addTiltEffect() {
+            const tiltElements = document.querySelectorAll('.tilt-effect');
+            
+            tiltElements.forEach(element => {
+                element.addEventListener('mousemove', (e) => {
+                    const rect = element.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    
+                    const rotateX = (y - centerY) / 10;
+                    const rotateY = (centerX - x) / 10;
+                    
+                    element.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+                });
+                
+                element.addEventListener('mouseleave', () => {
+                    element.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+                });
+            });
+        }
+
+        // Parallax Effect
+        function addParallaxEffect() {
+            const parallaxElements = document.querySelectorAll('.parallax-element');
+            
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                
+                parallaxElements.forEach(element => {
+                    const rate = scrolled * -0.5;
+                    element.style.transform = `translateY(${rate}px)`;
+                });
+            });
+        }
+
+        // Enhanced Click Effects
+        function addClickEffects() {
+            document.addEventListener('click', (e) => {
+                // Create ripple effect
+                const ripple = document.createElement('div');
+                ripple.style.position = 'absolute';
+                ripple.style.borderRadius = '50%';
+                ripple.style.background = 'rgba(102, 126, 234, 0.6)';
+                ripple.style.transform = 'scale(0)';
+                ripple.style.animation = 'ripple 0.6s linear';
+                ripple.style.left = (e.pageX - 10) + 'px';
+                ripple.style.top = (e.pageY - 10) + 'px';
+                ripple.style.width = '20px';
+                ripple.style.height = '20px';
+                ripple.style.pointerEvents = 'none';
+                ripple.style.zIndex = '9999';
+                
+                document.body.appendChild(ripple);
+                
+                setTimeout(() => {
+                    if (ripple.parentNode) {
+                        ripple.parentNode.removeChild(ripple);
+                    }
+                }, 600);
+            });
+        }
+
+        // Keyboard Shortcuts
+        function addKeyboardShortcuts() {
+            document.addEventListener('keydown', (e) => {
+                // Ctrl/Cmd + D for dark mode toggle
+                if ((e.ctrlKey || e.metaKey) && e.key === 'd') {
+                    e.preventDefault();
+                    toggleTheme();
+                }
+                
+                // Ctrl/Cmd + K for demo
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    startDemo();
+                }
+            });
+        }
+
+        // Smooth Reveal Animations
+        function addRevealAnimations() {
+            const revealElements = document.querySelectorAll('.card-premium, .stats-counter');
+            
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            revealElements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(50px)';
+                element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                revealObserver.observe(element);
+            });
+        }
+
+        // Initialize animations on load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load theme first
+            loadTheme();
+            
+            // Add loading animation
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.5s ease';
+                document.body.style.opacity = '1';
+            }, 100);
+            
+            // Initialize all interactive features
+            createCursorTrail();
+            createParticles();
+            addMagneticEffect();
+            addTiltEffect();
+            addParallaxEffect();
+            addClickEffects();
+            addKeyboardShortcuts();
+            addRevealAnimations();
+            
+            // Initialize counter animation after delay
+            setTimeout(() => {
+                const heroStats = document.querySelector('.hero-gradient .stats-counter');
+                if (heroStats) {
+                    animateCounters();
+                }
+            }, 1000);
+            
+            // Show welcome message
+            setTimeout(() => {
+                showNotification('🚀 Welcome to SecuraRide! Try hovering over cards and use Ctrl+D for dark mode!', 'success');
+            }, 2000);
+        });
+
+        // Mobile menu toggle (if needed)
+        function toggleMobileMenu() {
+            // Mobile menu implementation
+            showNotification('Mobile menu feature coming soon!', 'success');
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                // Close any open modals or menus
+                const toast = document.getElementById('notificationToast');
+                if (toast.classList.contains('show')) {
+                    toast.classList.remove('show');
+                }
+            }
+        });
+
+        // Performance optimization
+        let ticking = false;
+        function updateOnScroll() {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    // Scroll-based animations
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }
+        
+        window.addEventListener('scroll', updateOnScroll);
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97653b81177854b6',t:'MTc1NjM5OTAzOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./SecuraRide - Smart Rider Safety &amp; Guardian Alert System_files/saved_resource.html"></iframe><!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<div class="cursor-trail" style="left: 727.537px; top: 427.777px;"></div></body></html>
