@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+}
+.box{
+    background-color: blue;
+    height: 600px;
+    width: 500px;
+}
+input,select,textarea,button{
+
+    color: blueviolet;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background-color: brown;
+    margin: 2px;
+    padding: 3px;
+}
+label{
+    color:rgb(50, 216, 216);
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input:focus,textarea:focus,select:focus{
+    color:burlywood;
+    background-color: green;
+    font-size: 20px;
+    border-color: bisque;
+}
+button{
+    background-color: aquamarine;
+}
